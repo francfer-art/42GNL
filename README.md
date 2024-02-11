@@ -16,6 +16,7 @@
 - [Additional Instructions](#additional-instructions)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
+- [Bonus](#bonus)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -110,6 +111,21 @@ int main(void)
 
 
 ```
+
+## Bonus
+
+
+Bonus Part: Enhanced get_next_line()
+
+This bonus part challenges you to enhance the get_next_line() function by implementing it using only one static variable. Additionally, your enhanced get_next_line() should be capable of managing multiple file descriptors simultaneously. This means that the function should seamlessly handle reading from different file descriptors without losing the reading thread of each file descriptor or returning a line from another file descriptor.
+
+Here are the requirements for the bonus part:
+
+Develop get_next_line() using only one static variable.
+Ensure that your get_next_line() function can manage multiple file descriptors at the same time.
+For instance, if you can read from file descriptors 3, 4, and 5, your function should be able to read from a different file descriptor per call without losing the reading thread of each file descriptor or returning a line from another file descriptor. This implies that you should be able to call get_next_line() to read from file descriptor 3, then 4, then 5, and so forth, seamlessly switching between file descriptors as needed.
+
+This bonus part challenges your creativity and coding skills to implement a robust and efficient version of get_next_line() that can handle multiple file descriptors concurrently while maintaining a clean and manageable codebase. Good luck!
 
 ## Contributing
 

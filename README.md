@@ -11,8 +11,9 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Features](#features)
+- [Features](#overview)
 - [Requirements](#requirements)
+- [Additional Instructions](#additional Instructions)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Contributing](#contributing)
@@ -20,30 +21,35 @@
 
 ## Introduction
 
-Welcome to ft_printf! This project aims to provide a custom implementation of the printf function in C. The purpose of ft_printf is to handle various conversion specifiers and format options just like the original printf function, but with some limitations and requirements.
+Welcome to get_next_line! This project aims to provide a function that reads a line from a file descriptor, one line at a time, handling various scenarios and edge cases.
 
-## Features
-ft_printf is designed to handle the following conversion specifiers:
+## Overview
 
-```
-%c: Prints a single character.
-%s: Prints a string (as defined by the common C convention).
-%p: Prints a pointer address in hexadecimal format.
-%d: Prints a decimal (base 10) number.
-%i: Prints an integer in base 10.
-%u: Prints an unsigned decimal (base 10) number.
-%x: Prints a number in hexadecimal (base 16) lowercase format.
-%X: Prints a number in hexadecimal (base 16) uppercase format.
-%%: Prints a percent sign.
-```
+The get_next_line function allows you to read text files or input from the standard input (stdin) and returns the line that was read. It handles repeated calls (e.g., using a loop) to read the text file, ensuring that each call retrieves the next line.
 
 ## Requirements
-Here are some key requirements for ft_printf:
 
-The buffer management of the original printf() is not implemented.
-The function will be compared against the original printf().
-The command ar must be used to create the library (libftprintf.a), and the library must be created at the root of the repository.
-The use of the libtool command is forbidden.
+Here are the key requirements for the get_next_line function:
+
+```bash
+Repeated calls to get_next_line() should let you read the text file pointed to by the file descriptor, one line at a time.
+The function should return the line that was read. If there is nothing else to read or if an error occurred, it should return NULL.
+Ensure that the function works as expected both when reading a file and when reading from the standard input (stdin).
+The returned line should include the terminating \n character, except if the end of the file was reached and does not end with a \n character.
+Your header file get_next_line.h must contain at least the prototype of the get_next_line() function.
+Add all the necessary helper functions in the get_next_line_utils.c file.
+```
+## Additional Instructions
+
+Here are some additional instructions for compiling and handling the project:
+
+```bash
+To define the buffer size for read(), add the option -D BUFFER_SIZE=n to your compiler call, where n is the buffer size value.
+The buffer size value will be modified by your peer-evaluators and the Moulinette for testing purposes.
+You must be able to compile this project with and without the -D BUFFER_SIZE flag in addition to the usual flags.
+The function has undefined behavior if the file pointed to by the file descriptor changed since the last call, whereas read() didn’t reach the end of the file.
+The function also has undefined behavior when reading a binary file. However, you can implement a logical way to handle this behavior if you want to.
+```
 
 ## Getting Started
 

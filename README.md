@@ -1,4 +1,4 @@
-![Banner](https://raw.githubusercontent.com/francfer-art/Badges/main/covers/cover-get_next_line-bonus.png?token=GHSAT0AAAAAACI7BVOKJHW2QQMWXXXPROHMZOI2OMQ)
+![Banner](https://raw.githubusercontent.com/francfer-art/Badges/main/covers/cover-get_next_line-bonus.png?token=GHSAT0AAAAAACI7BVOLGDQPUKEWTKQBLIPUZOI5PYA)
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/francfer-art/Badges/main/badges/get_next_linem.png?token=GHSAT0AAAAAACI7BVOK6AAOOBVY5XBTJPOYZOI5OYQ" alt="GNL Logo">

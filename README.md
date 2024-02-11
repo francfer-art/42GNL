@@ -1,4 +1,4 @@
-![Banner](https://raw.githubusercontent.com/francfer-art/Badges/main/covers/cover-get_next_line-bonus.png?token=GHSAT0AAAAAACI7BVOLGDQPUKEWTKQBLIPUZOI5PYA)
+![Banner](https://raw.githubusercontent.com/15Galan/42_project-readmes/master/banners/cursus/projects/get_next_line-dark.png)
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/mcombeau/mcombeau/main/42_badges/get_next_linem.png" alt="GNL Logo">

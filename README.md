@@ -58,25 +58,19 @@ To use Libft in your project, follow these steps:
 1. Clone the repository:
 
 ```bash
-https://github.com/francfer-art/42Printf.git
+https://github.com/francfer-art/42GNL.git
 ```
 
 3. Include the library in your project:
 
 ```c
-    #include "ft_printf.h"
+    #include get_next_line.h
 ```
 
-4. Compile the library:
+4. You will compile your code as follows, where a buffer size of 42 is used as an example:
 
 ```bash
-    make
-```
-
-5. Link the library during compilation of your project:
-
-```bash
-    gcc main.c -L. -lftprintf -o my_program
+    gcc -Wall -Wextra -Werror -D BUFFER_SIZE=42 <files>.c
 ```
 
 ## Usage
@@ -84,17 +78,36 @@ https://github.com/francfer-art/42Printf.git
 Once the library is successfully integrated into your project, you can start using the functions in your code. Refer to the Libft Wiki for detailed documentation on each function.
 
 ```c
-#include "ft_printf.h"
+#include <stdio.h>
+#include <fcntl.h>
+#include "get_next_line.h"
 
-int main()
+int main(void)
 {
-    int num;
-    num = 7;
+    int fd;
+    char *line;
 
-    ft_printf("Hello, %s\n", "world!");
-    ft_printf("The value of the number is: %d\n", num);
+    // Open a file for reading
+    fd = open("example.txt", O_RDONLY);
+    if (fd < 0)
+    {
+        perror("Error opening file");
+        return 1;
+    }
+
+    // Read lines from the file using get_next_line
+    while ((line = get_next_line(fd)) != NULL)
+    {
+        printf("%s\n", line);
+        free(line); // Free the memory allocated by get_next_line
+    }
+
+    // Close the file descriptor
+    close(fd);
+
     return 0;
 }
+
 
 ```
 

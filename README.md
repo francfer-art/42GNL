@@ -13,7 +13,7 @@
 - [Introduction](#introduction)
 - [Features](#overview)
 - [Requirements](#requirements)
-- [Additional Instructions](#additional Instructions)
+- [Additional Instructions](#additional-instructions)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Contributing](#contributing)
@@ -31,7 +31,7 @@ The get_next_line function allows you to read text files or input from the stand
 
 Here are the key requirements for the get_next_line function:
 
-```bash
+```
 Repeated calls to get_next_line() should let you read the text file pointed to by the file descriptor, one line at a time.
 The function should return the line that was read. If there is nothing else to read or if an error occurred, it should return NULL.
 Ensure that the function works as expected both when reading a file and when reading from the standard input (stdin).
@@ -43,7 +43,7 @@ Add all the necessary helper functions in the get_next_line_utils.c file.
 
 Here are some additional instructions for compiling and handling the project:
 
-```bash
+```
 To define the buffer size for read(), add the option -D BUFFER_SIZE=n to your compiler call, where n is the buffer size value.
 The buffer size value will be modified by your peer-evaluators and the Moulinette for testing purposes.
 You must be able to compile this project with and without the -D BUFFER_SIZE flag in addition to the usual flags.

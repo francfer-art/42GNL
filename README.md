@@ -1,7 +1,11 @@
-![Banner](https://raw.githubusercontent.com/15Galan/42_project-readmes/master/banners/cursus/projects/get_next_line-dark.png)
+<a href="https://github.com/francfer-art/42GNL">
+    <img src="https://raw.githubusercontent.com/15Galan/42_project-readmes/master/banners/cursus/projects/get_next_line-dark.png" alt="Banner">
+</a>
 
 <p align="center">
+  <a href="https://github.com/francfer-art/42GNL">
   <img src="https://raw.githubusercontent.com/mcombeau/mcombeau/main/42_badges/get_next_linem.png" alt="GNL Logo">
+  </a>
 </p>
 
 <p align="center">
